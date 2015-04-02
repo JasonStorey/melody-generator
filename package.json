@@ -1,0 +1,20 @@
+{
+  "name": "melody-generator",
+  "version": "0.1.0",
+  "description": "Random melody generation",
+  "main": "index.js",
+  "scripts": {
+    "clean": "mkdir -p ./dist && rm -rf ./dist/*",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "npm run clean && browserify ./index.js -o ./dist/melody-generator.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "synthesizer": "git+ssh://git@github.com:JasonStorey/synthesizer.git#v0.1.0",
+    "teoria": "^1.6.0"
+  },
+  "devDependencies": {
+    "browserify": "^9.0.4"
+  }
+}
